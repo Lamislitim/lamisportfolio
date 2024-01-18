@@ -1,0 +1,511 @@
+body {
+    background-color: white;
+    color: black;
+    font-family: 'montserrat', sans-serif;
+    display: flex; flex-direction: column; min-height: 100vh; max-height: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+img{object-fit: contain;}
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+      background: #753;
+      color: #dcb;
+      outline: 5px dashed #000;
+    }
+  }
+
+.break-point::before {
+    content: "hiddentext";
+    font-size: 0;
+    display: block;
+    line-height: 0;
+}
+
+.about {
+    padding-top: 10px;
+    width: 50%;
+    text-align: center;
+}
+
+span {
+    color: #000 !important;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+
+}
+
+.title:hover {
+    color: #B809FF;
+}
+
+.title2:hover {
+    color: #B809FF;
+}
+
+main {
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.section {
+    padding-top: 80px;
+    margin: 0 auto;
+    width: 80%;
+    height:500px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.division {
+    height: 3px;
+
+    
+    padding-bottom: 80px;
+    margin-bottom: 100px;
+}
+
+
+
+.thegif {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+
+
+.title2 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 800;
+    padding: 0 4px;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 30px;
+
+}
+
+.title {
+    padding-bottom: 30px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 800;
+    padding: 0 4px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contat {
+    padding-top: 30px;
+    padding-bottom: 120px;
+    margin-bottom: 130px;
+    margin-top: 40px;
+    display: center;
+    text-align: center;
+    padding: 10px 30px;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding-bottom: 10px;
+}
+
+.block {
+    padding-top: 40px;
+    padding-bottom: 120px;
+}
+
+.thank {
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 30px;
+}
+/* 2xl */
+@media (min-width: 768px) {
+.thegif{width:30%;}
+    .work1,
+    .work2,
+    .work3,
+    .work4,
+    .work5{
+        width: 440px;
+        height: 440px;
+    }
+}
+
+/* 2xl */
+@media (max-width: 1536px) {
+    .container {
+        max-width: 1536px;flex:1;
+    }
+
+
+}
+
+/* xl */
+@media (max-width: 1280px) {
+    .container {
+        max-width: 1286px;flex:1;
+    }
+
+
+}
+
+/* lg */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 1024px;flex:1;
+    }
+
+
+}
+
+/* md */
+@media (max-width: 768px) {
+    .container {
+        max-width: 768px; flex:1;
+    }
+
+    .work1,
+    .work2,
+    .work3,
+    .work4,
+    .work5 {
+        width: 480px;
+        height: 480px;
+    }
+
+   span {
+        font-size: 13px;
+    }
+
+    .work-list {
+        flex-direction: column;
+        max-width: 70%;
+        align-items: center;
+    }
+
+    .portfolio img {
+        max-width: 768px;
+    }
+}
+
+/* sm */
+@media (max-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+
+    .work1,
+    .work2,
+    .work3,
+    .work4,
+    .work5 {
+        width: 380px;
+        height: 380px;
+    }
+    .work-list {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .about {
+        width: 100%;
+    }
+
+}
+@media (max-width: 320px) {
+    .container {
+        max-width: 640px;
+    }
+   
+.footerright{width:13%;}
+    #element {
+        line-height: 0.5em;
+    }
+    .work1,
+    .work2,
+    .work3,
+    .work4,
+    .work5 {
+        width: 280px;
+        height: 280px;
+    }
+    .work-list {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .about {
+        width: 100%;
+    }
+.footerleft{font-size: 10px;}
+.footerright{ justify-content: space-between;
+   
+    gap: 3.5rem;}
+}@media (max-width: 280px) {
+    .container {
+        max-width: 640px;flex:1;
+    }
+
+    
+    .footerright{ justify-content: space-between;
+        width: 10%;
+        gap: 3.5rem;}
+    .work1,
+    .work2,
+    .work3,
+    .work4,
+    .work5 {
+        width: 230px;
+        height: 230px;
+    }
+    .work-list {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .about {
+        width: 100%;
+    }
+
+}
+/* xs */
+@media (max-width: 475px) {
+
+    .thegif img {
+        width: 150px;
+    }
+
+    .work-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+   
+    .work1,
+    .work2,
+    .work3,
+    .work4,
+    .work5 {
+        width: 320px;
+        height: 320px;object-fit: contain;
+    }
+
+    .footer,
+    .division {
+        max-width: 100%;
+    }
+
+    .about {
+        width: 100%;
+    }
+
+    
+
+    span{
+        font-size: 15px;
+    }
+.container{flex:1;}
+}
+/* xs */
+
+
+
+.portfolio {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 0 4px;
+    padding-top: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.work-list {
+gap: 1rem;
+    display: flex;
+    padding: 0 4px;
+    justify-content: center;
+}
+
+
+
+
+.work1 {object-fit: contain;
+    max-width: 210px;
+    max-height:210px;
+    background-image: url("icons/branding.png");
+    background-repeat: no-repeat;
+   margin: 10px;
+   padding: 0 4px;
+   gap: 0.5rem;
+   
+  
+
+}
+
+.work1:hover{ box-shadow: #B809FF 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transform: translateY(-3px);
+}
+.work2:hover{ box-shadow: #B809FF 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transform: translateY(-3px);
+}
+.work3:hover{ box-shadow: #B809FF 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transform: translateY(-3px);
+}
+.work4:hover{ box-shadow: #C1FF00 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transform: translateY(-3px);
+}
+.work5:hover{ box-shadow: #C1FF00 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transform: translateY(-3px);
+}
+
+.work2 {object-fit: contain;
+    max-width: 210px;
+    max-height: 210px;
+    background-image: url("icons/uiux.png");
+    background-repeat: no-repeat;
+  
+    margin: 10px;
+    padding: 0 4px;
+    gap: 0.5rem;
+   
+
+}
+
+
+
+.work3 {object-fit: contain;
+    max-width: 210px;
+    max-height: 210px;
+    background-image: url("icons/mockups.png");
+    background-repeat: no-repeat;
+    margin: 10px;
+   padding: 0 4px;
+   gap: 0.5rem;
+   
+   
+
+}
+
+
+
+.work4 {object-fit: contain;
+    max-width: 210px;
+    max-height: 210px;
+    background-image: url("icons/marketing.png");
+    background-repeat: no-repeat;
+    margin: 10px;
+    padding: 0 4px;
+    gap: 0.5rem;
+  
+
+}
+
+
+
+.work5 {object-fit: contain;
+    max-width: 210px;
+    max-height: 210px;
+    background-image: url("icons/animation.png");
+    background-repeat: no-repeat;
+    margin: 10px;
+   padding: 0 4px;
+   gap: 0.5rem;
+   
+
+}
+
+
+
+.title {
+    font-size: 30px;
+    text-align: left;
+    font-weight: 800;
+    padding-left: 75px;
+    padding-bottom: 7px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.buttonCO {
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.button {
+    max-width: 100%;
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #B809FF;
+    font-weight: 600;
+    background: transparent;
+    cursor: pointer;
+    font-family: 'montserrat', sans-serif;
+    transition: ease-out 0.5s;
+    border: 2px solid #B809FF;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #B809FF;
+}
+
+.button:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #B809FF;
+}
+
+#element {
+
+
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    font-family: 'montserrat', sans-serif;
+}
+
+.button:active {
+    transform: scale(0.9);
+}

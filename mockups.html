@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamis Designer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <nav class="adjustheader">
+                <label>
+                    <a href="index.html"><img class="logo" src="logo-03.png" class="logo">
+                    </a>
+                </label>
+                <ul class="sidebar">
+                    <li onClick=hideSidebar()> <a href="#"><svg svg class="change-my-color"
+                                xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26">
+                                <path
+                                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                            </svg></a></li>
+                    <li> <a href="index.html">Home</a> </li>
+
+                    <li><a href="index.html#myprojects">Projects</a></li>
+
+                    <li><a href="index.html#mycontact">Contact</a></li>
+                </ul>
+                <ul>
+                    <li class="hideonmobile"> <a href="index.html">Home</a></li>
+
+                    <li class="hideonmobile"><a href="index.html#myprojects">Projects</a></li>
+
+                    <li class="hideonmobile"><a href="index.html#mycontact">Contact</a></li>
+                    <li class="menubutton" onclick=showSidebar()><a href="#"> <svg svg class="change-my-color"
+                                xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26">
+                                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                            </svg></a></li>
+                </ul>
+            </nav>
+
+        </div>
+    <main>
+        <div class="title2"> INM Rebranding  (Unofficial)</div>
+    <div class="block">
+        <img src="mockups/Desktop - 2.gif" class="center" alt style="width: 30%">
+        <img src="mockups/Desktop - 1.png" class="center" alt style="width: 30%">
+        <p class="thank">THANK YOU!</p>
+    </div>
+</main>
+<script>
+    function showSidebar() {
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+    }
+    function hideSidebar() {
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+    }
+</script>
+<footer class="footer">
+
+    <div class="row">
+
+        <p class="footerleft"> © All rights reserved to Lamis Litim</p>
+
+        <div class="footright">
+            <a href="https://wa.me/%2B21622918372" target="_blank"> <img src="Whatsapp.png" class="footerright"></a>
+          
+            <a href="https://www.linkedin.com/in/lamis-litim-2285b119b/" target="_blank"> <img src="Linkedin.png"
+                    class="footerright"></a>
+
+        </div>
+    </div>
+</footer>
+
+
+
+</body>
+
+</html>
