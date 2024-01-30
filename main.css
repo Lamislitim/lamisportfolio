@@ -18,8 +18,8 @@ img{object-fit: contain;}
 
 @media (prefers-color-scheme: dark) {
     body {
-      background: #753;
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       outline: 5px dashed #000;
     }
   }
