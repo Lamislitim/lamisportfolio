@@ -19,7 +19,7 @@ img{object-fit: contain;}
 @media (prefers-color-scheme: dark) {
     body {
       background: #753;
-      color: #dcb;
+      color: #ffffff;
       outline: 5px dashed #000;
     }
   }
